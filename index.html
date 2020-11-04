@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" integrity="sha512-f73UKwzP1Oia45eqHpHwzJtFLpvULbhVpEJfaWczo/ZCV5NWSnK4vLDnjTaMps28ocZ05RbI83k2RlQH92zy7A==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
     <title></title>
   </head>
@@ -12,31 +13,30 @@
     <div class="wrapper">
       <main>
         <section id="main-nav">
-          <div class="row ">
-            <div id="logo_box" class=" col-sm-12  hidden-xs">
-              <img src="img/Spotify_Logo_RGB_White.png" alt="">
-            </div>
-            <div id="logo_box_xs" class="col-xs-2 visible-xs ">
-              <img src="img/Spotify_Icon_CMYK_White.png" alt="">
-            </div>
-         </div>
-
-          <div class="row">
-            <div class="col-xs-2 col-sm-12">
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                <span class="hidden-xs">Home</span></a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                <span class="hidden-xs">Cerca</span></a>
-                </li>
-                <li><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                <span class="hidden-xs">La tua libreria</span></a></li>
-              </ul>
-            </div>
+          <div id="logo_box">
+            <img src="img/Spotify_Logo_RGB_White.png" alt="">
           </div>
 
-          <div class="col-sm-12 hidden-xs">
-            <h5 class="text-uppercase">playlist</h5>
+
+          <div id="home_icons">
+            <ul>
+              <li>
+                <i class="fas fa-home"></i>
+                <a  href="#">Home</a>
+              </li>
+              <li>
+                <i class="fas fa-search"></i>
+                <a href="#">Cerca</a>
+              </li>
+              <li>
+                <i class="fas fa-search"></i>
+                <a href="#">La tua libreria</a>
+              </li>
+            </ul>
+          </div>
+
+          <div id="playlist_menu">
+            <h3 class="text-uppercase">playlist</h3>
             <ul class="list-unstyled">
               <li>Crea playlist</li>
               <li>Nome playlist</li>
@@ -47,12 +47,6 @@
               <li>Nome playlist</li>
             </ul>
           </div>
-
-
-
-
-
-
 
 
         </section>
@@ -72,6 +66,5 @@
         </div>
       </footer>
     </div>
-
   </body>
 </html>
