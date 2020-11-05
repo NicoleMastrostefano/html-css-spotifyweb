@@ -43,7 +43,7 @@ main {
 #main-nav {
   width: 250px;
   height: calc(100% - 90px);
-  min-height: 400px;
+  min-height: 450px;
   background-color: black;
   padding: 20px;
   position: fixed;
@@ -178,20 +178,19 @@ h3 {
 }
 
 .album {
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
   background-color: pink;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  margin-right: 30px;
 
 }
 
 #album_box {
-  margin: 20px 0px;
+  margin: 40px 0px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 
@@ -206,7 +205,7 @@ footer {
 
 
 
-@media screen and (max-width:768px ) {
+@media screen and (max-width:576px ) {
 
   .xs-hidden {
     display: none;
@@ -233,5 +232,18 @@ footer {
   #top_content {
     width: calc(100% - 65px);
   }
-}
+
 /* sdoppiare logo */
+
+  #album_box {
+  justify-content: space-around;
+
+  }
+
+  .album {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
