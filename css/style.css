@@ -61,8 +61,8 @@ main {
 }
 
 #scrolling_playlist {
-  overflow:auto;
   height: 60%;
+  overflow:auto;
   margin-top:15px;
 }
 
@@ -79,7 +79,6 @@ h3 {
   line-height: 35px;
   text-align: center;
   background-color: grey;
-
   margin-right: 10px;
 }
 
@@ -93,21 +92,33 @@ h3 {
 }
 
 #content {
+  height: calc(100vh - 90px);
+  background-color: #141922;
   margin-left: 250px;
   padding: 120px 20px 20px;
-  background-color: #141922;
-  height: calc(100vh - 90px);
   overflow-y: auto;
   display: flex;
 }
 
 #top_content {
-  position: fixed;
-  top:0;
-  right: 0;
   height: 90px;
   width: calc(100% - 250px);
   background-color: rgba(8,11,18,0.5);
+  padding-right: 20px;
+  text-align: right;
+  position: fixed;
+  top:0;
+  right: 0;
+}
+
+#top_content a {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 90px;
+  padding: 15px 35px;
+  text-transform: uppercase;
+  border: 1px solid;
+  border-radius: 25px;
 }
 
 footer {
