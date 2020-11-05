@@ -133,6 +133,7 @@ h3 {
   padding: 120px 20px 20px;
   overflow-y: auto;
   display: flex;
+  flex-direction: column;
 }
 
 #top_content {
@@ -176,10 +177,22 @@ h3 {
   color: white;
 }
 
+.album {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 
+}
 
-
-
+#album_box {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 
 footer {
