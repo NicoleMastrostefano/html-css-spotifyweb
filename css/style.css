@@ -253,18 +253,14 @@ footer {
 
 #album_data {
   width: 20%;
-  height: 100%;
 }
 
 #control_player {
   width:35%;
-  height: 100%;
-  border: 1px solid red;
 }
 
 #audio_pannel {
   width: 20%;
-  height: 100%;
   border: 1px solid red;
 }
 
@@ -272,18 +268,16 @@ footer {
   width: 100%;
   margin: 20px 0px;
   height: 50px;
+  padding-left: 10px;
   display: flex;
   align-items: center;
-
 }
 
 .footer_player_box {
   width: 100%;
   height: 45px;
-  border: 1px solid red;
   text-align: center;
   padding: 10px 0px;
-
 }
 
 #song {
@@ -296,7 +290,7 @@ footer {
 }
 
 #album_data i {
-  padding-left: 4%;
+  padding-left: 8%;
 }
 
 #control_player i {
@@ -308,6 +302,15 @@ footer {
   vertical-align: middle;
 }
 
+.footer_player_box hr {
+  width: 55%;
+  margin: auto;
+  color: white;
+  height: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 15px;
+}
 
 @media screen and (max-width:576px ) {
 
@@ -360,8 +363,10 @@ footer {
     width:calc(100% /2);
   }
 
+  .footer_player_box hr {
+    width: 35%;
 }
-
+}
 @media screen and (min-width:576px) and (max-width:768px) {
 
   .album,
