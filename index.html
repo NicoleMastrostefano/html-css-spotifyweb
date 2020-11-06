@@ -22,7 +22,7 @@
               <ul>
                 <li>
                   <i class="fas fa-home sm-hidden"></i>
-                  <i id="home_active"class="fas fa-home xs-hidden"></i>
+                  <i id="home_active" class="fas fa-home xs-hidden"></i>
                   <a class="xs-hidden" href="#">Home</a>
                 </li>
                 <li>
@@ -73,34 +73,56 @@
                 <li><a href="#">scopri</a></li>
               </ul>
             </div>
-            <!-- memo: fare 1 layover -->
+
             <h2>Recently played</h2>
-            <div class="album_box">
-              <div class="album"><img src="img/metallica.png" alt="">
+            <div class="album_row">
+              <div class="album">
+                <div class="album_item">
+                  <img src="img/metallica.png" alt="">
+                  <div class="layover"><i class="fas fa-plus"></i>
+                  </div>
+                </div>
                 <h4>Heavy Metal</h4>
                 <small>Subtitle</small>
               </div>
-              <div class="album"><img src="img/stranger.png" alt="">
+              <div class="album">
+                <div class="album_item">
+                  <img src="img/stranger.png" alt="">
+                  <div class="layover"><i class="fas fa-plus"></i>
+                  </div>
+                </div>
                 <h4>Stranger things Vol.1 (A Netflix original series soundtrack)</h4> <small>Kyle Dixon & Michael Stein</small>
               </div>
-              <div class="album"><img src="img/quiet_place.png" alt="">
+              <div class="album">
+                <div class= "album_item"><img src="img/quiet_place.png" alt="">
+                  <div class="layover"><i class="fas fa-plus"></i>
+                  </div>
+                </div>
                 <h4>A quiet place</h4>
                 <small>Subtitle</small>
               </div>
-              <div class="album"><img src="img/split.png" alt=""><h4>Split</h4> <small>Subtitle</small>
+              <div class="album">
+                <div class="album_item">
+                  <img src="img/split.png" alt="">
+                    <div class="layover"><i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <h4>Split</h4>
+                <small>Subtitle</small>
               </div>
               <div class="album"><img src="img/wellness.png" alt="">
                 <h4>A cure for wellness</h4>
                 <small>Subtitle</small>
               </div>
-              <div class="album"><img src="img/sinister.png" alt="">
+              <div class="album"><img  src="img/sinister.png" alt="">
                 <h4>Sinister</h4>
                 <small>Subtitle</small>
               </div>
             </div>
+
             <h2>Creato per John Doe</h2>
               <h5>Piu ascolti più accurati saranno i suggerimenti</h5>
-            <div class="album_box">
+            <div class="album_row">
               <div class="album"><img src="img/release.png" alt="">
                 <h4>Release Radar</h4>
               </div>
@@ -110,7 +132,7 @@
             </div>
             <h2>Artisti più popolari</h2>
               <h5>Piu ascolti più accurati saranno i suggerimenti</h5>
-            <div class="album_box">
+            <div class="album_row">
               <div class="album_circle"><img src="img/lanadelray.jpg" alt="">
                 <h4>Lana Del Ray</h4>
               </div>
@@ -122,23 +144,24 @@
         <!-- /content -->
       </main>
       <!-- /main content -->
-
+      <!-- closure-->
       <footer>
         <div id="album_data">
           <div class="footer_box">
-                <!-- mettere cover box resp -->
-            <img src="img/sinister_cover.png" alt="">
-          <div id="song"><h5>Sinister</h5>
-            <small>Brano Nome</small>
-          </div>
-          <div>
-            <i class="far fa-heart"></i>
-            <i class="far fa-folder"></i>
-          </div>
+            <div id="cover_box">
+              <img src="img/sinister_cover.png" alt="">
+            </div>
+            <div id="song"><h5>Sinister</h5>
+              <small>Brano Nome</small>
+            </div>
+            <div class="icons">
+              <i class="far fa-heart"></i>
+              <i class="far fa-folder"></i>
+            </div>
           </div>
         </div>
         <div id="control_player">
-          <div id="justify_center"class="footer_player_box">
+          <div id="justify_center" class="footer_player_box">
             <i class="fas fa-random"></i>
             <i class="fas fa-step-backward"></i>
             <i class="far fa-play-circle"></i>
@@ -153,15 +176,14 @@
         </div>
         <div id="audio_pannel">
           <div class="footer_box">
-
             <i class="fas fa-list-ul"></i>
             <i class="fas fa-desktop"></i>
             <i class="fas fa-volume-up"></i>
             <hr>
+          </div>
         </div>
-      </div>
-
       </footer>
+      <!-- closure-->
     </div>
   </body>
 </html>
