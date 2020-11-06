@@ -76,8 +76,8 @@ main {
 }
 
 #home_icons li:first-child i {
-  border-left: 2px solid #81BA3D;
-  padding-left: 18px;
+  border-left: 3px solid #81BA3D;
+  padding-left: 17px;
 }
 
 #playlist_menu {
@@ -189,30 +189,46 @@ h3 {
   color: white;
 }
 
-#album_box {
+.album_box{
   width: 100%;
-  margin: 40px 0px;
   display: flex;
   flex-wrap: wrap;
+  margin: 40px 0px;
 }
 
 .album {
   width: calc(100% / 6);
   text-align: center;
-  margin-bottom: 30px;
-  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-.album img{
-  width: 70%;
+
+.album img,
+.album_circle img{
+  width: 90%;
   margin-bottom: 15px;
 }
 
 
-#album_box small {
+.album_box small {
   color: grey;
-  font-size: 8px;
+  font-size: 10px;
   margin-top: 5px;
+}
+
+.album_circle {
+  width: calc(100% / 6);
+  text-align: center;
+}
+
+.album_circle img {
+  border-radius: 50%;
+}
+
+#content h5 {
+  color: grey;
+  font-size: 12px;
+  margin-top: 10px;
 }
 
 footer {
@@ -256,18 +272,20 @@ footer {
     width: calc(100% - 65px);
   }
 
-  .album {
+  .album,
+  .album_circle {
     width:calC(100% /2);
   }
 
-  #album_box {
+  .album_box {
     justify-content: center;
   }
 }
 
 @media screen and (min-width:576px) and (max-width:768px) {
 
-  .album {
+  .album,
+  .album_circle {
     width: calc(100% /2);
   }
 }
@@ -275,7 +293,8 @@ footer {
 
 @media screen and (min-width:768px) and (max-width:992px) {
 
-  .album {
+  .album,
+  .album_circle {
     width:calc(100% /4);
   }
 }
