@@ -75,15 +75,15 @@ main {
   cursor: pointer;
 }
 
-#home_icons li:first-child i {
+#home_icons #home_active {
   border-left: 3px solid #81BA3D;
   padding-left: 17px;
 }
 
+
 #playlist_menu {
   padding: 20px;
   height: 50%;
-  margin-top: 30px;
   overflow-y: hidden;
 }
 
@@ -119,13 +119,14 @@ h3 {
   line-height: 40px;
 }
 
-#main-nav hr {
+#nav_bottom hr {
   margin: 10px 0px;
+  color: grey;
 }
 
 #nav_bottom {
   height: 90px;
-  padding: 20px;
+  padding: 0px 20px;
   background-color: black;
 }
 
@@ -133,6 +134,14 @@ h3 {
   padding-right: 10px;
   color: grey;
   cursor: pointer;
+}
+
+#nav_bottom .fa-user-circle {
+  font-size: 32px;
+}
+
+#nav_bottom span {
+  vertical-align: super;
 }
 
 #content {
@@ -252,11 +261,24 @@ footer {
     width: 72px;
   }
 
-
   #home_icons i {
     font-size: 30px;
     color: white;
+  }
 
+  #nav_bottom {
+    text-align: center;
+
+  }
+
+  #nav_bottom .fa-user-circle {
+    margin: 20px 0px;
+    color:grey;
+  }
+
+  #nav_bottom i {
+    padding: 0px;
+    color: white;
   }
 
   #nav_top img {
@@ -269,17 +291,14 @@ footer {
   }
 
   #top_content {
-    width: calc(100% - 65px);
+    width: calc(100% - 72px);
   }
 
   .album,
   .album_circle {
-    width:calC(100% /2);
+    width:calc(100% /2);
   }
 
-  .album_box {
-    justify-content: center;
-  }
 }
 
 @media screen and (min-width:576px) and (max-width:768px) {

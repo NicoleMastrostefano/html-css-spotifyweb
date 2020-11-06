@@ -11,15 +11,18 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- main content -->
       <main>
+        <!-- aside nav -->
         <section id="main-nav">
           <div id="nav_top">
-            <img class="xs-hidden"src="img/Spotify_Logo_RGB_White.png" alt="">
-            <img class="sm-hidden"src=img/Spotify_Icon_CMYK_White.png alt="">
+            <img class="xs-hidden" src="img/Spotify_Logo_RGB_White.png" alt="spotify_logo">
+            <img class="sm-hidden" src=img/Spotify_Icon_CMYK_White.png alt="spotify_icon">
             <div id="home_icons">
               <ul>
                 <li>
-                  <i class="fas fa-home"></i>
+                  <i class="fas fa-home sm-hidden"></i>
+                  <i id="home_active"class="fas fa-home xs-hidden"></i>
                   <a class="xs-hidden" href="#">Home</a>
                 </li>
                 <li>
@@ -34,7 +37,9 @@
             </div>
             <div id="playlist_menu" class="xs-hidden">
               <h3>playlist</h3>
+              <!-- memo:dividere btn -->
               <a href="#" id="btn_plus">Crea Playlist</a>
+              <!-- /memo:dividere btn -->
               <ul id="scrolling_playlist">
                 <li><a href="#">Nome Playlist</a></li>
                 <li><a href="#">Nome Playlist</a></li>
@@ -46,17 +51,19 @@
               </ul>
             </div>
           </div>
-          <div id="nav_bottom" class="xs-hidden">
-            <i class="far fa-arrow-alt-circle-down"></i><a href="#">Installa app</a>
-            <hr>
-            <div><i class="fa fa-user-circle-o" aria-hidden="true"></i>
-              <span>John Doe</span>
+          <div id="nav_bottom">
+            <i class="far fa-arrow-alt-circle-down"></i><a class="xs-hidden"href="#">Installa app</a>
+            <hr class="xs-hidden">
+            <div><i class="fa fa-user-circle" aria-hidden="true"></i>
+              <span class="xs-hidden">John Doe</span>
             </div>
           </div>
         </section>
+        <!-- /aside nav -->
+        <!-- content -->
         <section id="content">
           <div id="top_content"><a href="#">Effettua l'upgrade</a></div>
-            <div id="main_menu"class="active">
+            <div id="main_menu">
               <ul>
                 <li><a href="#">in evidenza</a></li>
                 <li><a href="#">podcast</a></li>
@@ -111,7 +118,9 @@
               </div>
             </div>
         </section>
+        <!-- /content -->
       </main>
+      <!-- /main content -->
 
       <footer>
 
