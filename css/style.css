@@ -241,15 +241,46 @@ h3 {
 }
 
 footer {
+  width: 100%;
+  height: 90px;
   background-color: #282828;
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
-  height: 90px;
+  display: flex;
+  justify-content: space-between;
 }
 
+#album_data {
+  width: 250px;
+  height: 100%;
+  border: 1px solid red;
+}
 
+#control_player {
+  height: 100%;
+  width: 500px;
+  border: 1px solid red;
+}
+
+#audio_pannel {
+  width: 250px;
+  height: 100%;
+  border: 1px solid red;
+}
+
+.footer_box {
+  width: 100%;
+  margin: 20px 0px;
+  border: 1px solid red;
+  height: 50px;
+}
+
+.footer_player_box {
+  width: 100%;
+  height: 45px;
+  border: 1px solid red;
+}
 
 @media screen and (max-width:576px ) {
 
@@ -266,9 +297,12 @@ footer {
     color: white;
   }
 
+  #home_icons i:hover {
+    color: #81BA3D;
+  }
+
   #nav_bottom {
     text-align: center;
-
   }
 
   #nav_bottom .fa-user-circle {
