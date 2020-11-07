@@ -111,7 +111,7 @@ h3 {
   line-height: 35px;
   color: black;
   text-align: center;
-  background-color: grey;
+  background-color: lightgrey;
   margin-right: 10px;
 }
 
@@ -137,7 +137,7 @@ h3 {
 }
 
 #nav_bottom .fa-user-circle {
-  font-size: 32px;
+  font-size: 34px;
 }
 
 #nav_bottom span {
@@ -179,6 +179,20 @@ h3 {
   font-size:14px;
 }
 
+#top_content .active {
+  position: relative;
+}
+
+.active::after{
+  content: "";
+  width: 35%;
+  height: 3px;
+  display: block;
+  background-color: #81BA3D;
+  margin: auto;
+  margin-top: 3px;
+}
+
 #main_menu {
   width: 100%;
   text-align: center;
@@ -217,6 +231,10 @@ h3 {
   width: 90%;
 }
 
+.album_row h4:hover {
+  text-decoration: underline;
+}
+
 .album_row h4 {
   margin-top: 15px;
 }
@@ -244,26 +262,28 @@ h3 {
 .layover {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
   left: 0;
-  transition: .5s ease;
   display: none;
 }
 
+#layover_circle {
+  border-radius: 50%;
+}
 .album_item:hover .layover,
 .album_item:hover .fa-plus {
   display: block;
   cursor: pointer;
 }
 
-.fa-plus {
+.album_item .fa-play-circle {
   position: absolute;
   top: 50%;
   left: 50%;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   transform: translate(-50%, -50%);
 }
 
@@ -315,7 +335,7 @@ footer {
 }
 
 #song {
-  width: 60%;
+  width: 65%;
   margin-left: 10px;
 }
 
@@ -324,7 +344,7 @@ footer {
 }
 
 #album_data .icons {
-  width: 40%;
+  width: 35%;
   text-align: right;
 }
 
@@ -335,15 +355,28 @@ footer {
 
 #album_data i {
   padding-left: 10px;
+  font-size: 15px;
+}
+
+#song small:hover,
+#album_data i:hover {
+  color: white;
+  cursor: pointer;
 }
 
 #control_player i,
 #audio_pannel i {
   padding-right: 5%;
+  cursor: pointer;
 }
 
-.fa-play-circle {
+#control_player .fa-play-circle {
   font-size: 25px;
+  cursor: pointer;
+}
+
+#control_player .fa-play-circle:hover{
+  font-size: 28px;
 }
 
 .footer_player_box hr {
@@ -357,8 +390,10 @@ footer {
 }
 
 #audio_pannel hr {
-  width: 55%;
+  width: 60%;
+  margin-right:10px;
 }
+
 
 @media screen and (max-width:576px ) {
 
@@ -427,6 +462,7 @@ footer {
   }
 
 }
+
 @media screen and (min-width:576px) and (max-width:768px) {
 
   .album,
