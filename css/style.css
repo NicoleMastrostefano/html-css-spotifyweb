@@ -87,6 +87,11 @@ main {
   overflow-y: hidden;
 }
 
+#playlist_menu span a {
+  vertical-align: super;
+
+}
+
 #scrolling_playlist {
   height: 100%;
   overflow:auto;
@@ -98,21 +103,19 @@ h3 {
   margin-bottom: 15px;
 }
 
-#btn_plus {
- font-size: 14px;
+
+#playlist_menu .fa-plus {
+  font-size: 18px;
+  background-color: lightgrey;
+  padding: 6px;
+  color: black;
+  margin-right: 10px;
 }
 
-#btn_plus::before{
-  content: "+";
-  font-size: 30px;
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  color: black;
-  text-align: center;
-  background-color: lightgrey;
-  margin-right: 10px;
+#playlist_menu .fa-plus:hover {
+  background-color: white;
+  color:black;
+  cursor: pointer;
 }
 
 #playlist_menu li {
@@ -233,6 +236,7 @@ h3 {
 
 .album_row h4:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .album_row h4 {
@@ -269,7 +273,7 @@ h3 {
   display: none;
 }
 
-#layover_circle {
+.circle {
   border-radius: 50%;
 }
 
