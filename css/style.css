@@ -460,7 +460,6 @@ footer:last-child .footer_box {
   #main-nav {
     width: 60px;
     text-align: center;
-
   }
 
   #home_icons i {
@@ -524,7 +523,7 @@ footer:last-child .footer_box {
   #audio_player_bar {
     right:38%;
   }
-  
+
   #audio_pannel .fa-circle{
     right:23%;
   }
