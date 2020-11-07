@@ -416,7 +416,7 @@ footer {
 }
 
 #audio_pannel hr {
-  width: 55%;
+  width: 50%;
   margin-right:10px;
 }
 
@@ -429,7 +429,7 @@ footer {
   height: 2px;
   background: #81BA3D;
   position: absolute;
-  right:48%;
+  right:45%;
   display: none;
 }
 
@@ -444,7 +444,7 @@ footer {
 }
 
 #audio_pannel .fa-circle{
-  right:43%;
+  right:38%;
 }
 
 footer:last-child .footer_box {
@@ -521,11 +521,11 @@ footer:last-child .footer_box {
   }
 
   #audio_player_bar {
-    right:38%;
+    right:40%;
   }
 
   #audio_pannel .fa-circle{
-    right:23%;
+    right:27%;
   }
 }
 
@@ -539,6 +539,14 @@ footer:last-child .footer_box {
   #album_data,
   #audio_pannel  {
   width: 26%;
+  }
+
+  #audio_player_bar {
+    width:15%;
+    right:41%;
+  }
+  #audio_pannel .fa-circle{
+    right:35%;
   }
 }
 
