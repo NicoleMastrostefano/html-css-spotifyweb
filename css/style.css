@@ -228,7 +228,7 @@ h3 {
 
 .album img,
 .album_circle img{
-  width: 90%;
+  width: 92%;
 }
 
 .album_row h4:hover {
@@ -260,18 +260,19 @@ h3 {
 }
 
 .layover {
-  width: 100%;
+  width: 93%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
-  left: 0;
+  left: 3%;
   display: none;
 }
 
 #layover_circle {
   border-radius: 50%;
 }
+
 .album_item:hover .layover,
 .album_item:hover .fa-plus {
   display: block;
@@ -279,11 +280,11 @@ h3 {
 }
 
 .album_item .fa-play-circle {
+  color: white;
+  font-size: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
-  color: white;
-  font-size: 30px;
   transform: translate(-50%, -50%);
 }
 
@@ -328,6 +329,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
 .footer_player_box#justify_center {
@@ -381,17 +383,49 @@ footer {
 
 .footer_player_box hr {
   width: 65%;
-  margin: auto;
-  color: white;
   height: 3px;
   opacity: 0.5;
   display: inline-block;
   margin: 0px 15px;
+  position: relative;
+}
+
+#player_bar {
+  width: 18%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  right:65%;
+}
+
+.footer_player_box:last-child:hover #player_bar {
+  background: #81BA3D;
+  display: block;
+  cursor: pointer;
+}
+
+.footer_player_box:last-child:hover i {
+  display: block;
+  cursor: pointer;
+}
+
+
+
+.footer_player_box:last-child i {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  right:61%;
+  display: none;
 }
 
 #audio_pannel hr {
   width: 60%;
   margin-right:10px;
+
 }
 
 
