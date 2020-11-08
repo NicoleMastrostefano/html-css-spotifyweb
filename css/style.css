@@ -60,7 +60,7 @@ main {
 
 #nav_top img {
   margin: 20px 50px 20px 20px;
-  width: 150px;
+  width: 135px;
 }
 
 #home_icons li {
@@ -107,7 +107,7 @@ h3 {
 #playlist_menu .fa-plus {
   font-size: 18px;
   background-color: lightgrey;
-  padding: 6px;
+  padding: 8px;
   color: black;
   margin-right: 10px;
 }
@@ -506,13 +506,17 @@ footer:last-child .footer_box {
     width: calc(100% - 60px);
   }
 
+  #main_menu{
+    padding: 0px 25px;
+  }
+
   .album,
   .album_circle {
     width:calc(100% /2);
   }
 
   .footer_player_box hr {
-    width: 40%;
+    width: 48%;
   }
 
   #album_data,
@@ -535,6 +539,8 @@ footer:last-child .footer_box {
 
 @media screen and (min-width:576px) and (max-width:768px) {
 
+
+
   .album,
   .album_circle {
     width: calc(100% /2);
@@ -555,7 +561,7 @@ footer:last-child .footer_box {
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
-
+  
   .album,
   .album_circle {
     width:calc(100% /4);
