@@ -310,7 +310,7 @@ footer {
 }
 
 #album_data,
-#audio_pannel {
+#audio_panel {
   width: 18%;
 }
 
@@ -329,15 +329,16 @@ footer {
 
 .footer_player_box {
   width: 100%;
-  height: 45px;
+  height: 40px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: relative;
 }
 
-.footer_player_box#justify_center {
+.footer_player_box#up {
   justify-content: center;
+  height: 50px;
 }
 
 #song {
@@ -370,19 +371,24 @@ footer {
   cursor: pointer;
 }
 
-#control_player i,
-#audio_pannel i {
-  padding-right: 5%;
+#audio_panel i {
+  padding-right: 6%;
+  cursor: pointer;
+}
+
+#control_player a {
+  width: 55px;
+  display: inline-block;
+  text-align: center;
   cursor: pointer;
 }
 
 #control_player .fa-play-circle {
   font-size: 25px;
-  cursor: pointer;
 }
 
 #control_player .fa-play-circle:hover{
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .footer_player_box hr {
@@ -392,11 +398,12 @@ footer {
   display: inline-block;
   margin: 0px 15px;
   position: relative;
+  cursor: pointer;
 }
 
 #player_bar {
   width: 18%;
-  height: 2px;
+  height: 3px;
   background: white;
   position: absolute;
   right:65%;
@@ -409,22 +416,23 @@ footer {
 }
 
 .footer_player_box:last-child:hover i,
-#audio_pannel:hover .fa-circle,
-#audio_pannel:hover #audio_player_bar {
+#audio_panel:hover .fa-circle,
+#audio_panel:hover #audio_player_bar {
   display: block;
   cursor: pointer;
 }
 
 .footer_player_box:last-child i {
-  right:61%;
+  right:62%;
 }
 
-#audio_pannel hr {
+#audio_panel hr {
   width: 50%;
   margin-right:10px;
+  cursor: pointer;
 }
 
-#audio_pannel {
+#audio_panel {
   position: relative;
 }
 
@@ -438,22 +446,24 @@ footer {
 }
 
 .footer_player_box:last-child i,
-#audio_pannel .fa-circle {
+#audio_panel .fa-circle {
   width: 20px;
   height: 20px;
-  line-height: 20px;
+  line-height: 21px;
   border-radius: 50%;
   position: absolute;
   display: none;
 }
 
-#audio_pannel .fa-circle{
+#audio_panel .fa-circle{
   right:38%;
 }
 
 footer:last-child .footer_box {
   justify-content: space-around;
 }
+
+
 
 @media screen and (max-width:576px ) {
 
@@ -537,9 +547,8 @@ footer:last-child .footer_box {
   }
 }
 
+
 @media screen and (min-width:576px) and (max-width:768px) {
-
-
 
   .album,
   .album_circle {
@@ -560,8 +569,9 @@ footer:last-child .footer_box {
   }
 }
 
+
 @media screen and (min-width:768px) and (max-width:992px) {
-  
+
   .album,
   .album_circle {
     width:calc(100% /4);
@@ -572,6 +582,7 @@ footer:last-child .footer_box {
   width: 24%;
   }
 }
+
 
 @media screen and (min-width:576px) {
 
